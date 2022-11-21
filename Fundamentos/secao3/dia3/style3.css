@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+ul:hover {
+    background-color: blueviolet;
+    
+}
+ol:hover{
+    background-color: blue
+}
+
+li:active {
+font-family:sans-serif, Helvetica 
+}
+
+    li {
+        list-style: none
+    }
