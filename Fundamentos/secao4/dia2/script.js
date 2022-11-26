@@ -21,8 +21,18 @@
 //console.log(cars[1]); // Volvo
 //console.log(cars[2]); // BMW
 
-let cars = ['Saab', 'Volvo', 'BMW'];
-for (let index = 0; index < cars.length; index += 1);{
+//let cars = ['Saab', 'Volvo', 'BMW'];
+//for (let index = 0; index < cars.length; index += 1);{
 
-    console.log(cars[index]);
+    //console.log(cars[index]);
+
+    //let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+    //for(let index = 0; index < numbers.lenght; index += 1){
+   //     console.log(numbers[index]);
+  // }
+  let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  
+    console.log(numbers[index]);
 }
