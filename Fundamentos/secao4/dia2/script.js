@@ -65,11 +65,23 @@ let media = soma / numbers.length;
    // console.log(valor menor que 20)
 //}
 
-Exercicio -5 // maior valor contido no array, e imprime!
+//Exercicio -5 // maior valor contido no array, e imprime!
+//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//let maiorValor = numbers [0];
+//for (numbers = 1; index < numbers.length; index += 1) {
+  //  if (numbers[index] > maiorValor) {
+    //    maiorValor = numbers[index]
+    //}
+//}
+
+//Exercício -6
+//Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let maiorValor = numbers [0];
-for (numbers = 1; index < numbers.length; index += 1) {
-    if (numbers[index] > maiorValor) {
-        maiorValor = numbers[index]
-    }
+let resultado = 0
+for (let index=0; index < numbers.length; index += 1){
+    if numbers[index] % 2 !== 0 {
+        resultado +=1
+     }
+} if (numbers[index] % == 0){
+    console.log (nenhum valor ímpar encontrado)
 }
