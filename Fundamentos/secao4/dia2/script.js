@@ -51,7 +51,25 @@
 //exercicio-3
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let soma = 0
-for (let index = 0; index < numbers.length; index += 1); {
+for (let index = 0; index < numbers.length; index += 1) {
     soma += numbers[index];
 }
-let media = soma / numbers.length
+let media = soma / numbers.length;
+
+//Exercicio-4
+//if (media > 20) {
+  //  console.log(valor maior que 20)
+//}
+
+//else {
+   // console.log(valor menor que 20)
+//}
+
+Exercicio -5 // maior valor contido no array, e imprime!
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let maiorValor = numbers [0];
+for (numbers = 1; index < numbers.length; index += 1) {
+    if (numbers[index] > maiorValor) {
+        maiorValor = numbers[index]
+    }
+}
