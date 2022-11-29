@@ -1,4 +1,5 @@
 // Inverter uma palavra
+
 let word = 'tryber';
 let reverseWord = '';
 
