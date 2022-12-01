@@ -57,9 +57,19 @@ const speedCar = (speed) => (
  console.log(speedCar(speed));
 
 
+// Parte 2
+let status = 'desligado';
+const = ligarDesligar() => 
+status === 'O motor está ligado' : 'O motor está desligado'
+console.log(motorLigado);
+let status = ' '
+}
 
-let speed = 90;
-const speedCar = (speed) => (
-  speed >= 120 ? `Você ultrapassou o limite de velocidade` : `Você está na velocidade permitida`
-);
-console.log(speedCar(speed));
+let status = 'desligado';
+const ligarDesligar = () => (
+  status === 'desligado' ? status = 'ligado' : status = 'desligado'
+)
+
+console.log(`O motor está ${ligarDesligar()}`); // O motor está ligado
+console.log(`O motor está ${ligarDesligar()}`); // O motor está desligado
+console.log(`O motor está ${ligarDesligar()}`); // O motor está ligado
