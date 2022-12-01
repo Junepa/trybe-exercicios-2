@@ -36,3 +36,14 @@ let player = {
   // console.log('A jogadora ' + player['name'] + ' ' + player['lastName'] + ' foi eleita a melhor do mundo por ' + player['bestInTheWorld'].length + ' vezes.');
 
   console.log('A jogadora possui ' + player.medals.golden + ' medalhas de ouro' + ' ' + player.medals.silver + ' medalhas de prata.');
+
+  let names = {
+    person1: 'João',
+    person2: 'Maria',
+    person3: 'Jorge',
+  };
+
+  for (let key in names){
+    console.log('Olá meu nome é ' + '' + names[key])
+
+  }
