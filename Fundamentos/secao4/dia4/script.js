@@ -45,5 +45,106 @@ let player = {
 
   for (let key in names){
     console.log('Olá meu nome é ' + '' + names[key])
-
   }
+
+ 
+  let car = {
+    model: 'A3 Sedan',
+    manufacturer: 'Audi',
+    year: 2020
+  };
+  for (let key in car) {
+    console.log(key, car[key])
+  }
+
+  function soma(a,b) {
+return a + b;
+  }
+  console.log(soma())
+
+  const userInfo = {
+    name: 'Cláudio',
+    id: '5489-2',
+    email: 'claudio@email.com',
+  };
+  
+  userInfo.name = 'João';
+  
+  console.log(userInfo);
+
+  // Com o template literals
+console.log(`Primeira linha;
+Segunda linha;
+Terceira linha;`
+);
+
+// Sem o template literals:
+console.log('Primeira linha;\n' + 'Segunda linha;\n' + 'Terceira linha;\n');
+
+//Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.
+
+// Exemplo de palíndromo: arara
+
+// verificaPalindrome('arara')
+
+// Retorno esperado: true
+// verificaPalindrome('desenvolvimento')
+
+// Retorno esperado: false
+
+function verificaPalindromo (string) {
+  for(index in string){
+    if (string[index] != string[(string.length -1) - index]){
+return false;
+    }
+  }
+  return true;
+}
+console.log(verificaPalindromo('arara'));
+
+// Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+// Array de teste: [2, 3, 6, 7, 10, 1];.
+
+// Valor esperado no retorno da função: 4
+
+function maiorIndice (numeros) {
+  let maiorIndice = 0
+  for (let index in numeros) {
+     }
+  if (numeros[maiorIndice] < numeros[index])
+  maiorIndice = index
+  {
+  }
+  return maiorIndice
+    }
+
+    
+console.log(maiorIndice[2, 3, 6, 7, 10, 1]); 
+
+function indiceDoMaior(numeros) {
+  let indiceMaior = 0;
+  for (let indice in numeros) {
+    if (numeros[indiceMaior] < numeros[indice]) {
+      indiceMaior = indice;
+    }
+  }
+
+  return indiceMaior;
+}
+
+console.log(indiceDoMaior([2, 3, 6, 7, 10, 1])); 
+
+
+
+function maiorPalavra(palavras) {
+  let maiorPalavra = palavras[0];
+  for (let indice in palavras) {
+    if (maiorPalavra.length < palavras[indice].length) {
+      maiorPalavra = palavras[indice];
+    }
+  }
+
+  return maiorPalavra;
+}
+
+console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
