@@ -58,12 +58,12 @@ const speedCar = (speed) => (
 
 
 // Parte 2
-let status = 'desligado';
-const = ligarDesligar() => 
-status === 'O motor está ligado' : 'O motor está desligado'
-console.log(motorLigado);
-let status = ' '
-}
+// let status = 'desligado';
+// const = ligarDesligar() => 
+// status === 'O motor está ligado' : 'O motor está desligado'
+// console.log(motorLigado);
+// let status = ' '
+// }
 
 let status = 'desligado';
 const ligarDesligar = () => (
@@ -73,3 +73,32 @@ const ligarDesligar = () => (
 console.log(`O motor está ${ligarDesligar()}`); // O motor está ligado
 console.log(`O motor está ${ligarDesligar()}`); // O motor está desligado
 console.log(`O motor está ${ligarDesligar()}`); // O motor está ligado
+
+const circleArea = (raio) => {
+  const pi = 3,14;
+let resultadoDafunção = pi * raio * raio
+  console.log(`Essa é a área do círculo ${resultadoDafunção}`)
+}
+circleArea(3);
+
+const circleArea = (radius) => {
+  const PI = 3.14;
+
+  let area = PI * radius * radius;
+
+  console.log(`Essa é a área do círculo: ${area}`);
+}
+
+circleArea(3); // Essa é a área do círculo: 28.259999999999998
+
+const maiorPalavra = (frase) => {
+
+
+}
+console.log(maiorPalavra('Fui ontem ao supermercado e comprei ovos'))
+
+let fatorial = 1;
+for (let index = 0; index <= 10; index -= 1){
+  let resultado = fatorial[index];
+}
+console.log(resultado);

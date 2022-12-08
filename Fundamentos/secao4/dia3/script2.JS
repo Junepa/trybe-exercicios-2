@@ -5,7 +5,7 @@
 //for (index = 0; index < numeros.length; index += 1) {
     //let fatorial *= numeros[index]
 //}
-let fatorial = 1;
+let fatorial = 7;
 
 for (let index = 10; index > 0; index -= 1) {
   fatorial *= index;
