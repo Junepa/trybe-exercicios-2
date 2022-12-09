@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="title1">
+    <script>
+      //Adicione a tag h1 com o texto TrybeTrip - Agência de Viagens como filho da tag body;
+const title = document.getElementById ('title1'); //peguei o elemento pai
+const elementH1 = document.createElement ('h1') // criei um elemento 'h1' no caso;
+elementH1.innerHTML = 'TrybeTrip - Agência de viagens'; // coloquei o  conteúdo
+document.title.appendChild(elementH1)
+
+const elementH1 = document.createElement('h1');
+elementH1.innerText = 'TrybeTrip - Agência de Viagens';
+document.body.appendChild(elementH1); //mandei para a posição do h1 - DÚVIDA!!!!
+
+// Adicione a tag `main` com a classe `main-content` como filho da tag `body`;
+const elementMain = document.createElement('main'); // criei o elemento main a partir de document.creatElement;
+elementMain.className = 'main-content';
+document.body.appendChild(elementMain)
+
+//// Adicione a tag `section` com a classe `center-content` como filho da tag `main` criada no passo 2;
+const criaSection = document.createElement('section');
+criasection.className = 'center-content';
+document.ElementMain.appendChild(criasection);
+
+
+//// Adicione a tag `p` como filho do `section` criado no passo 3 e coloque algum texto;
+const addParagrafo = document.createElement('p');
+addParagrafo.innerHTML = 'Olá, eu posso te ajudar?';
+document.criaSection.appendChild(addParagrafo);
+
+//// Adicione a tag `section` com a classe `left-content` como filho da tag `main` criada no passo 2;
+const elementSectionLeft = document.createElement('section');
+elementSection.className = 'left-content';
+elementMain.appendChild(elementSectionLeft);
+
+/// Adicione a tag `section` com a classe `right-content` como filho da tag `main` criada no passo 2;
+const tagSection = document.createElement ('section');
+tagSection.className = 'right-content';
+elementMain.appendChild(tagSection);
+
+//// Adicione uma imagem com `src` configurado para o valor `https://picsum.photos/200` e classe `small-image`. Esse elemento deve ser filho do `section` criado no passo 5;
+const image = document.createElement('img');
+image.className = 'small-image';
+image.src = 'https://picsum.photos/200'
+criaSection.appendChild(image);
+
+// Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, `um`, `dois`, `três`, ... como valores da lista. Essa lista deve ser filha do `section` criado no passo 6;
+const criaLista = document.createElement('li');
+criaLista.innerHTML = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+tagSection.appendChild(criaLista); //(difícil!!!)
+
+const elementUl = document.createElement('ul');
+      elementSectionRight.appendChild(elementUl);
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+      for (let num in arrayNumbers) {
+        const elementLi = document.createElement('li');
+        elementLi.innerHTML = arrayNumbers[num];
+        elementUl.appendChild(elementLi);
+      }
+
+// Adicione 3 tags `h3`, todas sendo filhas do `main` criado no passo 2.
+for (let index = 1; index <= 3; index += 1) {
+        const elementH3 = document.createElement('h3');
+        elementH3.innerHTML = 'Show ' + index;
+        elementMain.appendChild(elementH3);
+      }
+
+
+  // Adicione a classe title na tag h1 criada;
+  elementH1.className = 'title'; //DÚVIDA! EU TENHO QUE ACESSAR O H1, MESMO SE JÁ CONSIGO PUXAR ESSE ELEMENTO POR UMA CONSTANTE?)
+
+  const title = document.querySelector('h1'); //selecionei o elemento por meio do querySelector, 
+title.className = 'title'
+
+      // Adicione a classe description nas 3 tags h3 criadas;
+      const elementsH3 = document.getElementsByTagName('h3'); //selecionei os elementos h3 pela tagName
+      for (let index = 0; index < 3; index += 1) { // percorri os três elementos com o for
+        elementsH3[index].className = 'description'; // adicionei a classe em cada um dos h3
+      }
+const class = document.getElementsByTagName('h3');
+for (let index = 0; index < 3; index += 1);
+class[index].className = 'description'
+
+
+
+
+
+
+
+
+// </script>
+
+
+    </script>
+  </body>
+</html>
