@@ -108,20 +108,34 @@ const order = {
   payment: {
     total: 60,
   }}
-  // Complete a função customerInfo() para que seu retorno seja similar a 'Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701'.
+//   // Complete a função customerInfo() para que seu retorno seja similar a 'Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701'.
+// console.log(Object.keys(order))
+// // console.log(order.order.delivery.deliveryPerson);
+// // console.log(order.name);
+
+//   const customerInfo = (order) => {
+//   const delivery = order.order.delivery.deliveryPerson;
+//   const customer = order.name;
+//   const phoneNumber = order.phoneNumber;
+//   const address = order.address.street
+//   const addressNumber = order.address.number;
+//   const addressApt = order.address.apartment
+//   return `Olá ${delivery}, entrega para ${customer}, Telefone ${phoneNumber}, R. ${address}, ${addressNumber}, ${addressApt}.`
+//   }
+//   // customerInfo(order);
+//   console.log(customerInfo(order))
+
+
+
+//  'Olá Luiz Silva, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00.';
+const orderModifier = (order) =>{
+const newName = order.name = 'Luiz Silva';
+const saborPizza = Object.keys(order.order.pizza)
+const bebida = order.order.drinks.coke.type
+const preco = order.payment.total = 50;
+return `Olá ${newName}, o total do seu pedido de ${saborPizza}, e ${bebida} é R$ ${preco}.`
+}
 console.log(Object.keys(order))
-// console.log(order.order.delivery.deliveryPerson);
-// console.log(order.name);
-
-  const customerInfo = (order) => {
-  const delivery = order.order.delivery.deliveryPerson;
-  const customer = order.name;
-  const phoneNumber = order.phoneNumber;
-  const address = order.address.street
-  const addressNumber = order.address.number;
-  const addressApt = order.address.apartment
-  return `Olá ${delivery}, entrega para ${customer}, Telefone ${phoneNumber}, R. ${address}, ${addressNumber}, ${addressApt}.`
-  }
-  // customerInfo(order);
-  console.log(customerInfo(order))
-
+console.log(order.name)
+console.log(order.order.pizza)
+console.log(orderModifier(order));
