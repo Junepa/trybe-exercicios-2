@@ -1,0 +1,21 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+header{
+  background-color: rgb(17, 53, 17);
+  text-align: center;
+  padding: 30px;
+}
+
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: beige;
+  font-style: unset;
+}
+
+body{
+  background-color: rgb(197, 190, 190);
+  text-align: center;
+}
