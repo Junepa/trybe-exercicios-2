@@ -1,0 +1,12 @@
+body {
+  background-color: azure;
+}
+
+#btn {
+background-color: blueviolet;
+border-radius: 5%;
+border: none;
+font-size: medium;
+font-family: fantasy;
+
+}
