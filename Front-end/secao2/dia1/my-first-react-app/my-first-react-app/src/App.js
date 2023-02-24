@@ -1,10 +1,20 @@
+// .src/App.js
 import React from 'react';
-import About from './About';
+
+import Header from './Header';
+import Content from './Content';
+import Footer from './Footer';
+
+import './App.css';
 
 class App extends React.Component {
   render() {
     return (
-      <About/>
+      <div>
+        <Header />
+        <Content />
+        <Footer />
+      </div>
     );
   }
 }
