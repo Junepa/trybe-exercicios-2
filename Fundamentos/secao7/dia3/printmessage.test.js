@@ -1,0 +1,1 @@
+const { info } = require('./printMessage.js');

@@ -64,10 +64,30 @@
 // const confirma = (arr, name) => {
 //   return arr.some((nome) => nome === name)
 // }
-// console.log(confirma(names, 'Ana')); // true
-// console.log(confirma(names, 'Pedro')); // false
+// console.log(confirma(nameshas, 'Ana')); // true
+// console.log(confirma(nameshas, 'Pedro')); // false
+
+const people = [
+  { name: 'Mateus', age: 18 },
+  { name: 'José', age: 16 },
+  { name: 'Ana', age: 23 },
+  { name: 'Cláudia', age: 20 },
+  { name: 'Bruna', age: 19 },
+];
+// const verifyAges = (nome, idade) => {
+// return nome.every((elemento) => elemento.age > idade
+// )
+// }
+const verifyAges = (nome, idade) => {
+  nome.every((elemento) => { nome.age > idade
+
+  })
+
+}
 
 
+console.log(verifyAges(people, 18));
+console.log(verifyAges(people, 14));
 
 // const hasName = (arr, name) => {
 //   return arr.some((currentName) => currentName === name);
@@ -106,16 +126,32 @@
 //   return employees;
 // };
 
-const numeros = [1,2,3,4,5];
-const numeroSorteado = Math.random(numeros);
-const numeroApostado = Math.random(numeros);
-const checa = () => {
-if(numeroApostado === numeroSorteado) {
-  console.log('Parabéns, você ganhou!')
-else{
-  console.log('Tente novamente!')
-}
-}
-numeros.forEach((elemento, (checa)) => {
+// const numeros = [1,2,3,4,5];
+// const numeroSorteado = Math.random(numeros);
+// const numeroApostado = Math.random(numeros);
+// const checa = () => {
+// if(numeroApostado === numeroSorteado) {
+//   console.log('Parabéns, você ganhou!')
+// else{
+//   console.log('Tente novamente!')
+// }
+// }
+// numeros.forEach((numeroApostado, checa())) => {
 
-})
+// })
+const trabalhador = (nome) => {
+const name = nome.split(' ') //transforma em array
+const nome1 = name[0];
+const nome2 = name[1];
+return `${nome1.toLowerCase()}${nome2.toLowerCase()}@trybe.com`
+}
+
+const newEmployees = () => {
+  const employees = {
+    id1: {nome: trabalhador('Pedro Guerra')},
+    id2: {nome: trabalhador('Pedro Guerra')},
+    id3: {nome: trabalhador('Pedro Guerra')},
+  }
+  return employees;
+};
+  console.log(newEmployees())
