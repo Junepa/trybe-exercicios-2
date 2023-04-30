@@ -10,7 +10,7 @@ const [studentInfo, setStudentInfo] = useState({
   module: '',
 })
 
-const handleChange = (target) => {
+const handleChange = ({target}) => {
 const { name, value } = target
 setStudentInfo((prevState) => ({
 ...prevState,
@@ -25,7 +25,7 @@ return (
         type='text'
         value={studentInfo.name}
         onChange={handleChange}
-        name='inputName'
+        name='name'
         
         />
       </label>
@@ -36,7 +36,7 @@ return (
         type='number'
         value={studentInfo.age}
         onChange={handleChange}
-        name='inputAge'
+        name='age'
         />
       </label>
       <label>
@@ -45,43 +45,47 @@ return (
         type='text'
         value={studentInfo.city}
         onChange={handleChange}
-        name='inputCity'
+        name='city'
         />
       </label>
 
       <label>Fundamentos
         <input 
         type='radio'
-        value={studentInfo.module}
+        value='Fundamentos'
         onChange={handleChange}
-        name='inputFund'
+        name='module'
+        checked={studentInfo.module === 'Fundamentos'}
         />
       </label>
 
       <label>Front-end
         <input 
         type='radio'
-        value={studentInfo.module}
+        value='Front-end'
         onChange={handleChange}
-        name='inputFront'
+        name='module'
+        checked={studentInfo.module === 'Front-end'}
         />
       </label>
 
       <label>Back-end
         <input 
         type='radio'
-        value={studentInfo.module}
+        value='Back-end'
         onChange={handleChange}
-        name='inputBack'
+        name='module'
+        checked={studentInfo.module === 'Back-end'}
         />
       </label>
 
       <label>Ciência da Computação
         <input 
         type='radio'
-        value={studentInfo.module}
+        value='Ciência da Computação'
         onChange={handleChange}
-        name='inputCiencComp'
+        name='module'
+        checked={studentInfo.module === 'Ciência da Computação'} 
         />
       </label>
       <button
