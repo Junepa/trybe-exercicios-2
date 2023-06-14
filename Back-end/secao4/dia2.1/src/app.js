@@ -51,4 +51,19 @@ res.status(201).json(newMovie)
 }
  })
 
+ get.put('/movies/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { movie, price } = req.body;
+    const movies = await readFile();
+    const index = movies.findIndex((element) => element.id === Number(id));
+    const updatedMovies = JSON.stringify(movies, null, 2);
+    await fs.writeFile(moviesPath, updatedMovies);
+    res.status(200).json(movies[index])
+
+  } catch(err){
+    res.status(500).send({message: message.err})
+  }
+ })
+
 module.exports = app
