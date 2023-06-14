@@ -19,7 +19,7 @@ app.get('/movies/:id', async (req, res) => {
   try {
      const movies = await readFile();
      const movie = movies.find((movie)=> movie.id === Number(req.params.id))
-     res.status(200).json(movie)
+     res.status(206).json(movie)
    } catch (err) {
      res.status(500).send({ message: err.message });
    }
@@ -59,10 +59,26 @@ res.status(201).json(newMovie)
     const index = movies.findIndex((element) => element.id === Number(id));
     const updatedMovies = JSON.stringify(movies, null, 2);
     await fs.writeFile(moviesPath, updatedMovies);
-    res.status(200).json(movies[index])
+    res.status(203).json(movies[index])
 
   } catch(err){
     res.status(500).send({message: message.err})
+  }
+ })
+
+ app.delete('/movies/:id', async (req, res) => {
+  try{
+    const { id } = req.params;
+    const movies = await readFile();
+    const movieFiltered = movies.filter((movie)=> {
+movie.id !== Number(id)
+    })
+    const upDateMovie = JSON.stringify(movieFiltered);
+await fs.writeFile(moviesPath, upDateMovie);
+res.status(204).end()
+
+  }catch(err){
+res.status(500).send({message: mesage.err})
   }
  })
 
